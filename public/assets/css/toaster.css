@@ -1,0 +1,41 @@
+.toast {
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.toast-body {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.toast-body ul {
+    font-size: 0.85rem;
+}
+
+.toast-body ul li {
+    margin-bottom: 0.25rem;
+}
+
+.toast-body .fw-bold {
+    font-size: 0.9rem;
+}
+
+/* Animation improvements */
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.toast.show {
+    animation: slideInRight 0.3s ease-in-out;
+}
+
+.toast + .toast {
+    margin-top: 0.5rem;
+}
